@@ -26,7 +26,7 @@ Node.js 18
 
 Local Development
 
-Clone the repository:git clone https://github.com/pvgohhh/t0d0_app.git
+Clone the repository:git clone https://github.com/pvgohhh/t0d0_app
 cd t0d0_app
 
 
@@ -37,7 +37,7 @@ cd ../frontend && npm install
 Run with Docker Compose:docker-compose up --build
 
 
-Access the app at http://localhost:3002.
+Access the app at http://localhost:3008.
 
 Deployment to Minikube
 
