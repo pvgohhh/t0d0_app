@@ -1,0 +1,72 @@
+.app-container {
+     max-width: 600px;
+     margin: 50px auto;
+     padding: 20px;
+     background: linear-gradient(135deg, #1e3c72, #2a5298);
+     border-radius: 15px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     color: #fff;
+   }
+
+   .app-title {
+     text-align: center;
+     font-size: 2.5em;
+     margin-bottom: 20px;
+     color: #ffd700;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+   }
+
+   .input-container {
+     display: flex;
+     gap: 10px;
+     margin-bottom: 20px;
+   }
+
+   .task-input {
+     flex: 1;
+     padding: 10px;
+     font-size: 1em;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     background: rgba(255, 255, 255, 0.9);
+     color: #333;
+   }
+
+   .add-button {
+     padding: 10px 20px;
+     font-size: 1em;
+     border: none;
+     border-radius: 5px;
+     background: #ffd700;
+     color: #1e3c72;
+     cursor: pointer;
+     transition: background 0.3s;
+   }
+
+   .add-button:hover {
+     background: #ffca28;
+   }
+
+   .task-list {
+     list-style: none;
+     padding: 0;
+   }
+
+   .task-item {
+     padding: 10px;
+     background: rgba(255, 255, 255, 0.1);
+     border-radius: 5px;
+     margin-bottom: 10px;
+     transition: transform 0.2s;
+   }
+
+   .task-item:hover {
+     transform: translateX(10px);
+   }
+
+   .no-tasks {
+     text-align: center;
+     color: #ccc;
+     font-style: italic;
+   }

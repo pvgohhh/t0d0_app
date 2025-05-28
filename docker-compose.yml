@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3007:3001"
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://user:password@postgres:5432/tododb
+  frontend:
+    build: ./frontend
+    ports:
+      - "3008:3000"
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=tododb
+    volumes:
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
