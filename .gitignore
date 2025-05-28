@@ -1,0 +1,30 @@
+# Node.js
+   node_modules/
+   npm-debug.log
+   .env
+   *.log
+
+   # Docker
+   *.tar.gz
+
+   # Temporary files
+   .DS_Store
+   *.swp
+   *.swo
+
+   # Build outputs
+   frontend/build/
+   frontend/dist/
+
+   # System files
+   .bash_history
+   .cache/
+   .config/
+   .docker/
+   .kube/
+   .minikube/
+   .npm/
+   .nvm/
+   .ssh/
+   .viminfo
+   .wget-hsts
